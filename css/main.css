@@ -1,0 +1,75 @@
+:root {
+  --bg-primary: #323d43;
+  --bg-primary-l: #323d43;
+  --bg-secondary: #38464e;
+  --accent-primary: #e68183;
+  --text-primary: #f5edde;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 360px;
+  background: var(--bg-secondary);
+  padding: 1.8rem;
+  border-radius: 8px;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  width: inherit;
+  border-radius: inherit;
+}
+
+.user-info {
+  margin-right: 1rem;
+}
+
+.username {
+  margin-top: 0.6rem;
+  font-weight: bold;
+}
+
+.card__top {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.avatar-wrapper {
+  width: 80px;
+  height: 80px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.roles {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.role {
+  padding: 4px 8px;
+  background: var(--bg-primary-l);
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.role::before {
+  content: "";
+  margin-right: 8px;
+  background: var(--color, #e48383);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
